@@ -1,0 +1,38 @@
+BootstrapPeers: []
+DataRoot: ./node_data
+DNSOverHTTPSURL: ""
+PprofPort: 6060
+Nurse:
+    Enabled: false
+Libp2pTransport:
+    Enabled: true
+    ListenAddr: 0.0.0.0
+    ListenPort: 21231
+    Reachability: ""
+    ReachableAt: ""
+    StaticRelays: []
+BraidHTTPTransport:
+    Enabled: true
+    ListenHost: :8080
+    ListenHostSSL: :8082
+    TLSCertFile: ""
+    TLSKeyFile: ""
+    DefaultStateURI: example.project/foo
+    ReachableAt: http://localhost:8080
+AuthProtocol:
+    Enabled: true
+BlobProtocol:
+    Enabled: true
+HushProtocol:
+    Enabled: true
+TreeProtocol:
+    Enabled: true
+    MaxPeersPerSubscription: 4
+HTTPRPC:
+    Enabled: true
+    ListenHost: :8081
+    TLSCertFile: ""
+    TLSKeyFile: ""
+    Whitelist:
+        Enabled: false
+        PermittedAddrs: []
